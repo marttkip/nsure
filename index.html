@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>N-SURE</title>
+	
+	<!-- font Raleway link -->  
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- all css here -->
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/swipebox.css">		        
+	<!-- font-awesome.min CSS -->      
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- style CSS -->          
+	<link rel="stylesheet" href="style.css">
+	<!-- style CSS -->          
+	<link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal menubg">
+    	<div class="menu-hoverlay">
+			<div class="line"></div>
+			<div class="logo-box">
+				<h3><img src="img/logo2.png" alt="" /></h3>
+			</div>
+			<div class="mainmenu">
+				<div class="row">
+					<div class="col-50">
+						<div class="menu">
+						<a href="dashboard.html" class="item-link close-panel">
+							<img src="img/menu/1.png" alt="">
+							DASHBOARD
+							</a>
+						</div>
+					</div>
+					
+					<div class="col-50">
+						<div class="menu">
+						<a class="item-link close-panel item-content" href="about.html">
+							<img src="img/menu/2.png" alt="">
+							SETTINGS</a>
+						</div>
+					</div>
+
+					<div class="col-50">
+						<div class="menu">
+						<a class="item-link close-panel item-content" href="about.html">
+							<img src="img/menu/2.png" alt="">
+							ABOUT</a>
+						</div>
+					</div>
+					
+					<div class="col-50">
+						<div class="menu">
+						<a class="item-link close-panel item-content" href="video-gallery.html">
+							<img src="img/menu/10.png" alt="">
+							HOW TO</a>
+						</div>
+					</div>
+					
+					<div class="col-50">
+						<div class="menu">
+						<a class="item-link close-panel item-content external" href="tel:+88-01627-600206">
+							<img src="img/menu/11.png" alt="">
+							CALL US</a>
+						</div>
+					</div>
+					<div class="col-50">
+						<div class="menu">
+						<a class="item-link close-panel item-content" href="contact.html">
+							<img src="img/menu/12.png" alt="">
+							CONTACT</a>
+						</div>
+					</div>		
+				</div>
+			</div>
+			<!-- Menu end -->
+		</div>
+    </div>
+	<!-- login screen  start-->
+	<div class="login-screen">
+    <div class="view">
+      <div class="page">
+        <div class="page-content login-screen-content registerbody">
+			<div class="register-content">
+				<a href="index.html#" class="close-login-screen floatright"><i class="fa fa-times"></i></a>
+				<h3><img src="img/logo2.png" alt=""></h3>
+				<form action="index.html#">
+					<div class="inputbox">
+						<span>Username:</span><br>
+						<input type="text" name="name" id="name" placeholder="Username">
+					</div>
+					<div class="inputbox">
+						<span>Password:</span><br>
+						<input type="password" name="password" placeholder="***********">
+					</div>
+					<div class="inputbox">
+						<a data-popup=".popup-forgetpass" class="open-popup"   href="index.html#">Forget Password?</a>
+					</div>
+					<div class="inputbox">
+						<button class="button button-big">Login</button>
+					</div>						
+				</form>	
+				<p>Don’t have an account?  <a data-popup=".popup-register" class="open-popup" href="index.html#">Sign Up</a></p>
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login screen  start-->
+	<!-- forget password  start-->
+ <div class="popup popup-forgetpass">
+	<div class="registerbody">
+		<a href="index.html#" class="close-popup closebutton"><i class="fa fa-times"></i></a>
+		<div class="register-content">
+			<h3><img src="img/logo2.png" alt=""></h3>
+			<form action="index.html#">
+				<div class="inputbox">
+					<span>Email:</span><br>
+					<input type="email" name="password" placeholder="email@gmail.com">
+				</div>
+				<div class="inputbox">
+					<button class="button button-big">Remember me</button>
+				</div>						
+			</form>	
+			<p>Don’t have an account?<a data-popup=".popup-register" class="open-popup" href="index.html#"> Sign Up</a></p>
+		</div>
+	 </div>
+</div>
+  <!-- forget password  end-->
+  <!-- resister popup start-->
+<div class="popup popup-register">
+	<div class="registerbody">
+			<a href="index.html#" class="close-popup closebutton"><i class="fa fa-times"></i></a>
+	     <div class="register-content">
+			<h3><img src="img/logo2.png" alt=""></h3>
+				<form action="index.html#">
+				<div class="inputbox">
+					<span>Full Name:</span><br>
+					<input type="text" name="fulname" placeholder="Full Name">
+				</div>
+				<div class="inputbox">
+					<span>Username:</span><br>
+					<input type="text" name="username2" placeholder="Username">
+				</div>
+				<div class="inputbox">
+					<span>Email:</span><br>
+					<input type="email" name="email" placeholder="email@gmail.com">
+				</div>
+				<div class="inputbox">
+					<span>Password:</span><br>
+					<input type="password" name="password2" placeholder="***********">
+				</div>
+				<div class="inputbox">
+					<button class="button button-big">Sign Up</button>
+				</div>					
+			</form>
+		</div>
+	 </div>
+</div>
+  <!-- resister popup start-->	
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+		<div class="view view-main">
+			<!-- Top Navbar-->
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left">
+				  <!-- left link contains only icon - additional "icon-only" class--><a href="index.html#" class="link icon-only open-panel"><img src="img/menu.png" alt=""></a>
+					</div>
+					<!-- We have home navbar without left link-->
+					<div class="center sliding"><img src="img/logo.png" alt="" /></div>
+					<div class="right">
+				  <!-- right link contains only icon - additional "icon-only" class--><a href="index.html#" data-panel="right" class="link icon-only open-login-screen"><img src="img/menu2.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+
+            <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+			<div class="pages navbar-through toolbar-through">
+			  <!-- Page, data-page contains page name-->
+				<div data-page="index" class="page">
+				<!-- Scrollable page content-->
+					<div class="page-content">
+						<div class="col-50 tablet-25">
+							<img src="img/splash.png" alt="">
+						</div>
+	 					
+						<!-- features area start-->
+						<div class="features-area warper">
+							<div class="row">
+								
+								<!-- single-features start -->
+								<div class="col-50 tablet-25">
+									<div class="single-features">
+										<div class="features-icon">
+											<img src="img/dollar.png" alt="">
+										</div>
+										<div class="features-info-text">
+											<h3>MONEY BACK GUARANTEE</h3>
+											<p>100% money back guarantee.</p>
+										</div>
+									</div>
+								</div>
+								<!-- single-features end -->
+								<!-- single-features start -->
+								<div class="col-50 tablet-25">
+									<div class="single-features">
+										<div class="features-icon">
+											<img src="img/support.png" alt="">
+										</div>
+										<div class="features-info-text">
+											<h3>ONLINE SUPPORT 24/7</h3>
+											<p>Lorem ipsum dolor sit amet</p>
+										</div>
+									</div>
+								</div>
+								<!-- single-features end -->
+							</div>
+						</div>
+						<!-- features area end-->						
+						<!--our-client-area start-->
+						<div class="client-area">
+							<div class="section-title">
+								<h1>OUR <strong> PARTNERS</strong></h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam</p>
+							</div>
+							<div class="client-all-content">
+								<div class="row">
+									<div class="col-50 tablet-25">
+										<div class="client-img">
+											<a href="index.html#"><img src="img/clients/1.svg" alt=""></a>
+										</div>
+									</div>
+									<div class="col-50 tablet-25">
+										<div class="client-img">
+											<a href="index.html#"><img src="img/clients/2.svg" alt=""></a>
+										</div>
+									</div>
+									<div class="col-50 tablet-25">
+										<div class="client-img">
+											<a href="index.html#"><img src="img/clients/3.svg" alt=""></a>
+										</div>
+									</div>
+									<div class="col-50 tablet-25">
+										<div class="client-img">
+											<a href="index.html#"><img src="img/clients/4.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--our-client-area end-->
+					<!-- footer  start-->				
+						<div class="footer-area warper">
+							<div class="footer-icons">
+								
+								<p>Copyright 2015. All rights reserved NSURE LIMITED</p>
+							</div>
+						</div>
+						<!-- footer  end-->		
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	
+	<!-- Js -->
+	<!-- jquery-1.11.3.min js -->         
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Path to Framework7 Library JS --> 
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!--jquery.swipebox js --> 
+    <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+	<!-- Path to your app js --> 
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
