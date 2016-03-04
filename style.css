@@ -171,6 +171,7 @@ body{font-family: 'Open Sans', sans-serif;}
   margin-left: -15px;
   padding: 10px 15px;
   position: relative;
+  overflow: auto;
   width: 100%;
 }
 .navbar-inner{
@@ -1363,4 +1364,18 @@ display: none;
     z-index: 15;
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
+}
+
+.home-menu
+{
+  /*padding: 15px;*/
+}
+.content-block-inner::before
+{
+  overflow: auto;
+}
+
+.content-block-inner::after
+{
+  overflow: auto;
 }
