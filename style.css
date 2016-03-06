@@ -168,8 +168,8 @@ body{font-family: 'Open Sans', sans-serif;}
 .content-block-inner {
   background: #ffffff none repeat scroll 0 0;
   color: #222;
-  margin-left: -15px;
-  padding: 10px 15px;
+  margin-left: 0px;
+  padding: 5px 0px;
   position: relative;
   overflow: auto;
   width: 100%;
@@ -340,8 +340,8 @@ body{font-family: 'Open Sans', sans-serif;}
   text-align: center;
 }
 .single-product {
-  padding-bottom: 20px;
-  padding-top: 10px;
+  /*padding-bottom: 20px;*/
+  /*padding-top: 10px;*/
 }
 .single-product:last-child{margin: 0;}
 .pro-img {
@@ -1368,8 +1368,20 @@ display: none;
 
 .home-menu
 {
-  /*padding: 15px;*/
+  padding: 5px;
+  border: 1px solid #ccc;
 }
+.home-menu img
+{
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.home-menu .fa
+{
+  margin-top: 30px;
+  /*margin-left: -15px;*/
+}
+
 .content-block-inner::before
 {
   overflow: auto;
