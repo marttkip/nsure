@@ -34,111 +34,195 @@
   </head>
   <body>
 
-	<div class="login-screen">
-    <div class="view">
-      <div class="page">
-        <div class="page-content login-screen-content registerbody">
-			<div class="register-content">
-				<a href="index.html#" class="close-login-screen floatright"><i class="fa fa-times"></i></a>
-				<h3><img src="img/logo2.png" alt=""></h3>
-				<form action="index.html#">
-					<div class="inputbox">
-						<span>Username:</span><br>
-						<input type="text" name="name" id="name" placeholder="Username">
-					</div>
-					<div class="inputbox">
-						<span>Password:</span><br>
-						<input type="password" name="password" placeholder="***********">
-					</div>
-					<div class="inputbox">
-						<a data-popup=".popup-forgetpass" class="open-popup"   href="index.html#">Forget Password?</a>
-					</div>
-					<div class="inputbox">
-						<button class="button button-big">Login</button>
-					</div>						
-				</form>	
-				<p>Don’t have an account?  <a data-popup=".popup-register" class="open-popup" href="index.html#">Sign Up</a></p>
-			</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- login screen  start-->
-	<!-- forget password  start-->
- <div class="popup popup-forgetpass">
-	<div class="registerbody">
-		<a href="index.html#" class="close-popup closebutton"><i class="fa fa-times"></i></a>
-		<div class="register-content">
-			<h3><img src="img/logo2.png" alt=""></h3>
-			<form action="index.html#">
-				<div class="inputbox">
-					<span>Email:</span><br>
-					<input type="email" name="password" placeholder="email@gmail.com">
-				</div>
-				<div class="inputbox">
-					<button class="button button-big">Remember me</button>
-				</div>						
-			</form>	
-			<p>Don’t have an account?<a data-popup=".popup-register" class="open-popup" href="index.html#"> Sign Up</a></p>
-		</div>
-	 </div>
-</div>
-  <!-- forget password  end-->
-  <!-- resister popup start-->
-<div class="popup popup-register">
-	<div class="registerbody">
-			<a href="index.html#" class="close-popup closebutton"><i class="fa fa-times"></i></a>
-	     <div class="register-content">
-			<h3><img src="img/logo2.png" alt=""></h3>
-				<form action="index.html#">
-				<div class="inputbox">
-					<span>Full Name:</span><br>
-					<input type="text" name="fulname" placeholder="Full Name">
-				</div>
-				<div class="inputbox">
-					<span>Username:</span><br>
-					<input type="text" name="username2" placeholder="Username">
-				</div>
-				<div class="inputbox">
-					<span>Email:</span><br>
-					<input type="email" name="email" placeholder="email@gmail.com">
-				</div>
-				<div class="inputbox">
-					<span>Password:</span><br>
-					<input type="password" name="password2" placeholder="***********">
-				</div>
-				<div class="inputbox">
-					<button class="button button-big">Sign Up</button>
-				</div>					
-			</form>
-		</div>
-	 </div>
-</div>
-
-<div class="pages">
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
 <div class="navbar">
-	<div class="navbar-inner">
-		<div class="left">
-	  <!-- left link contains only icon - additional "icon-only" class--><a href="index.html#" class="link icon-only open-panel"><img src="img/menu.png" alt=""></a>
-		</div>
-		<!-- We have home navbar without left link-->
-		<div class="center sliding"><img src="img/logo.png" alt="" /></div>
-		<div class="right">
-	  <!-- right link contains only icon - additional "icon-only" class--><a href="index.html#" data-panel="right" class="link icon-only open-login-screen"><img src="img/menu2.png" alt=""></a>
-		</div>
-	</div>
+  <div class="navbar-inner">
+    <div class="left"><a href="dashboard.html#" class="back link"><i class="fa fa-angle-left"></i><span>Back</span></a></div>
+    <div class="center sliding"><img src="img/logo.png" alt=""></div>
+  </div>
 </div>
+<div class="pages">
   <!-- Page, data-page contains page name-->
   <div data-page="dashoboard" class="page">
     <!-- Scrollable page content-->
-		<div class="page-content">
-			<div class="content-block">
-				<div class="content-block-inner">
-					 <div class="dashboard-area">
-						<div class="dashboard-title">
-							<img src="img/logo2.png" alt="">	
-						</div>	
-						<div class="row">
+    <div class="page-content">
+      <div class="content-block">
+        <div class="content-block-inner">	
+			<div class="dashboard-area">
+				<div class="dashboard-title">
+					<h3>MOTOR INSURANCE</h3>			
+				</div>	
+				<div class="row">
+					<!-- single-features start -->
+						<div class="col-100 tablet-33">
+							<div class="page-content">
+							<div class="row">
+						        <div class="input-field col s6">
+						          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+						          <label for="first_name">First Name</label>
+						        </div>
+						        <div class="input-field col s6">
+						          <input id="last_name" type="text" class="validate">
+						          <label for="last_name">Last Name</label>
+						        </div>
+						    </div>
+				                <div class="list-block">
+				                    <ul>
+				                        <!-- Text inputs -->
+				                        <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-profile"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Car Registration</div> -->
+				                                    <div class="item-input">
+				                                        <input type="text" placeholder="Car Registration">
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+				                        <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-at-sign"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Make</div> -->
+				                                    <div class="item-input">
+				                                        <input type="text" placeholder="Car Make" class="">
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+
+				                       
+
+				                        <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-profile"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Model</div> -->
+				                                    <div class="item-input">
+				                                        <input type="text" placeholder="Model">
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+
+				                        <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-profile"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Year</div> -->
+				                                    <div class="item-input">
+				                                        <input type="text" placeholder="Year">
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+				                         <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-profile"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Estimated Value</div> -->
+				                                    <div class="item-input">
+				                                        <input type="text" placeholder="Estimated Value">
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+
+				                         <!-- Select -->
+				                        <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-man-woman"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Car Use</div> -->
+				                                    <div class="item-input">
+				                                        <select>
+				                                        	<option>Car Use</option>
+				                                            <option>Private</option>
+				                                            <option>Commercial</option>
+				                                        </select>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+				                          <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-man-woman"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Car Use</div> -->
+				                                    <div class="item-input">
+				                                        <select>
+				                                        	<option>Insurance Type</option>
+				                                            <option>Comprehensive</option>
+				                                            <option>Third Party</option>
+				                                        </select>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+				                        <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-man-woman"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Courtesy Car Cover</div> -->
+				                                    <div class="item-input">
+				                                        <select>
+				                                        	<option>Courtesy Car Cover</option>
+				                                            <option>Yes</option>
+				                                            <option>No</option>
+				                                        </select>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+				                         <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-man-woman"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Political Violence Cover</div> -->
+				                                    <div class="item-input">
+				                                        <select>
+				                                        	<option>Political Violence Cover</option>
+				                                            <option>Yes</option>
+				                                            <option>No</option>
+				                                        </select>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+				                           <li>
+				                            <div class="item-content">
+				                                <div class="item-media"><span class="icon-man-woman"></span></div>
+				                                <div class="item-inner">
+				                                    <!-- <div class="item-title label">Excess Protector Cover</div> -->
+				                                    <div class="item-input">
+				                                        <select>
+				                                        	<option>Excess Protector Cover</option>
+				                                            <option>Yes</option>
+				                                            <option>No</option>
+				                                        </select>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </li>
+
+
+				                    </ul>
+				                </div>
+				               
+				              <div class="form-row">
+				                    <div class="input-submit">
+				                        <a href="premiums.html" class="button button-big js-form-submit button-fill button-primary">GET QUOTE</a>
+				                    </div>
+				                </div>
+				            </div>
+							
+							
+						</div>				
+						
+				</div>
+					<div class="row">
 							<div class="home-menu">
 								<a href="">
 						  			<div class="col s12 ">
@@ -197,22 +281,21 @@
 					  		</div>
 						
 								
-						</div>			
-					</div>
-					
-				</div>
+						</div>				
 			</div>
 			
 			<!-- footer  start-->				
 			<div class="footer-area warper">
 				<div class="footer-icons">
 					
-					<p>Copyright 2015. All rights reserved- SURE</p>
+					<p>Copyright 2015. All rights reserved NSURE LIMITED</p>
 				</div>
 			</div>
-			<!-- footer  end-->		
-		</div>
-	</div>
+			<!-- footer  end-->	
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 	
 	<!-- Js -->
