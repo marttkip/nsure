@@ -33,73 +33,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <!-- Status bar overlay for fullscreen mode-->
-    <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal menubg">
-    	<div class="menu-hoverlay">
-			<div class="line"></div>
-			<div class="logo-box">
-				<h3><img src="img/logo2.png" alt="" /></h3>
-			</div>
-			<div class="mainmenu">
-				<div class="row">
-					
-					<div class="col-50">
-						<div class="menu">
-						<a href="dashboard.html" class="item-link close-panel">
-							<img src="img/menu/1.png" alt="">
-							DASHBOARD
-							</a>
-						</div>
-					</div>
-					
-					<div class="col-50">
-						<div class="menu">
-						<a class="item-link close-panel item-content" href="about.html">
-							<img src="img/menu/2.png" alt="">
-							SETTINGS</a>
-						</div>
-					</div>
 
-					<div class="col-50">
-						<div class="menu">
-						<a class="item-link close-panel item-content" href="about.html">
-							<img src="img/menu/2.png" alt="">
-							ABOUT</a>
-						</div>
-					</div>
-					
-					<div class="col-50">
-						<div class="menu">
-						<a class="item-link close-panel item-content" href="video-gallery.html">
-							<img src="img/menu/10.png" alt="">
-							HOW TO</a>
-						</div>
-					</div>
-					
-					<div class="col-50">
-						<div class="menu">
-						<a class="item-link close-panel item-content external" href="tel:+88-01627-600206">
-							<img src="img/menu/11.png" alt="">
-							CALL US</a>
-						</div>
-					</div>
-					<div class="col-50">
-						<div class="menu">
-						<a class="item-link close-panel item-content" href="contact.html">
-							<img src="img/menu/12.png" alt="">
-							CONTACT</a>
-						</div>
-					</div>		
-				</div>
-			</div>
-			<!-- Menu end -->
-		</div>
-    </div>
-	<!-- login screen  start-->
 	<div class="login-screen">
     <div class="view">
       <div class="page">
@@ -180,115 +114,106 @@
 		</div>
 	 </div>
 </div>
-  <!-- resister popup start-->	
-    <!-- Views-->
-    <div class="views">
-      <!-- Your main view, should have "view-main" class-->
-		<div class="view view-main">
-			<!-- Top Navbar-->
-			<div class="navbar">
-				<div class="navbar-inner">
-					<div class="left">
-				  <!-- left link contains only icon - additional "icon-only" class--><a href="index.html#" class="link icon-only open-panel"><img src="img/menu.png" alt=""></a>
-					</div>
-					<!-- We have home navbar without left link-->
-					<div class="center sliding"><img src="img/logo.png" alt="" /></div>
-					<div class="right">
-				  <!-- right link contains only icon - additional "icon-only" class--><a href="index.html#" data-panel="right" class="link icon-only open-login-screen"><img src="img/menu2.png" alt=""></a>
-					</div>
-				</div>
-			</div>
 
-            <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-			<div class="pages navbar-through toolbar-through">
-			  <!-- Page, data-page contains page name-->
-				<div data-page="index" class="page">
-				<!-- Scrollable page content-->
-					<div class="page-content">
-						<div class="content-block">
-							<div class="content-block-inner">
-								 <div class="dashboard-area">
-									<div class="dashboard-title">
-										<img src="img/logo2.png" alt="">	
-									</div>	
-									<div class="row">
-										<div class="home-menu">
-											<a href="">
-									  			<div class="col s12 ">
-													<div class="col s3">
-														<img src="img/policies/medical.png" alt="">
-													</div>
-													<div class="col s7">
-														<div class="pro-content">
-															<h4>My policy</h4>
-															<p>Policy Status</p>
-															<p>Claim Status</p>	
-															<p>New Claim</p>		
-														</div>
-													</div>
-													<div class="col s2 view-detail">
-														<i class="fa fa-arrow-right"></i>
-													</div>
-												</div>
-											</a>
-								  		</div>
-								  		<div class="home-menu">
-								  			<div class="col s12 ">
-												<div class="col s3">
-													<img src="img/policies/life.png" alt="">
-												</div>
-												<div class="col s7">
-													<div class="pro-content">
-														<h4>Personal Insurance</h4>
-														<p>Policy Status</p>
-														<p>Claim Status</p>	
-														<p>New Claim</p>		
-													</div>
-												</div>
-												<div class="col s2 ">
-													<i class="fa fa-arrow-right"></i>
-												</div>
+<div class="pages">
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+	  <!-- left link contains only icon - additional "icon-only" class--><a href="index.html#" class="link icon-only open-panel"><img src="img/menu.png" alt=""></a>
+		</div>
+		<!-- We have home navbar without left link-->
+		<div class="center sliding"><img src="img/logo.png" alt="" /></div>
+		<div class="right">
+	  <!-- right link contains only icon - additional "icon-only" class--><a href="index.html#" data-panel="right" class="link icon-only open-login-screen"><img src="img/menu2.png" alt=""></a>
+		</div>
+	</div>
+</div>
+  <!-- Page, data-page contains page name-->
+  <div data-page="dashoboard" class="page">
+    <!-- Scrollable page content-->
+		<div class="page-content">
+			<div class="content-block">
+				<div class="content-block-inner">
+					 <div class="dashboard-area">
+						<div class="dashboard-title">
+							<img src="img/logo2.png" alt="">	
+						</div>	
+						<div class="row">
+							<div class="home-menu">
+								<a href="">
+						  			<div class="col s12 ">
+										<div class="col s3">
+											<img src="img/policies/medical.png" alt="">
+										</div>
+										<div class="col s7">
+											<div class="pro-content">
+												<h4>My policy</h4>
+												<p>Policy Status</p>
+												<p>Claim Status</p>	
+												<p>New Claim</p>		
 											</div>
-								  		</div>
-								  		<div class="home-menu">
-								  			<div class="col s12 ">
-												<div class="col s3">
-													<img src="img/policies/sme.png" alt="">
-												</div>
-												<div class="col s7">
-													<div class="pro-content">
-														<h4> Corporate Insurance</h4>
-														<p>Policy Status</p>
-														<p>Claim Status</p>	
-														<p>New Claim</p>		
-													</div>
-												</div>
-												<div class="col s2 view-detail">
-													<i class="fa fa-arrow-right"></i>
-												</div>
-											</div>
-								  		</div>
-									
-											
-									</div>			
+										</div>
+										<div class="col s2 view-detail">
+											<i class="fa fa-arrow-right"></i>
+										</div>
+									</div>
+								</a>
+					  		</div>
+					  		<div class="home-menu">
+					  			<div class="col s12 ">
+									<div class="col s3">
+										<img src="img/policies/life.png" alt="">
+									</div>
+									<div class="col s7">
+										<div class="pro-content">
+											<h4>Personal Insurance</h4>
+											<p>Policy Status</p>
+											<p>Claim Status</p>	
+											<p>New Claim</p>		
+										</div>
+									</div>
+									<div class="col s2 ">
+										<i class="fa fa-arrow-right"></i>
+									</div>
 								</div>
-								
-							</div>
-						</div>
+					  		</div>
+					  		<div class="home-menu">
+					  			<div class="col s12 ">
+									<div class="col s3">
+										<img src="img/policies/sme.png" alt="">
+									</div>
+									<div class="col s7">
+										<div class="pro-content">
+											<h4> Corporate Insurance</h4>
+											<p>Policy Status</p>
+											<p>Claim Status</p>	
+											<p>New Claim</p>		
+										</div>
+									</div>
+									<div class="col s2 view-detail">
+										<i class="fa fa-arrow-right"></i>
+									</div>
+								</div>
+					  		</div>
 						
-						<!-- footer  start-->				
-						<div class="footer-area warper">
-							<div class="footer-icons">
 								
-								<p>Copyright 2015. All rights reserved- SURE</p>
-							</div>
-						</div>
-						<!-- footer  end-->		
+						</div>			
 					</div>
+					
 				</div>
 			</div>
-        </div>
-    </div>
+			
+			<!-- footer  start-->				
+			<div class="footer-area warper">
+				<div class="footer-icons">
+					
+					<p>Copyright 2015. All rights reserved- SURE</p>
+				</div>
+			</div>
+			<!-- footer  end-->		
+		</div>
+	</div>
+</div>
 	
 	<!-- Js -->
 	<!-- jquery-1.11.3.min js -->         
