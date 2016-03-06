@@ -18,7 +18,7 @@ html {
     position: relative;
     height: 100%;
     /*width: 100%;*/
-    overflow: hidden;
+    overflow:hidden;
 }
 body {
     font-family: -apple-system, SF UI Text, Helvetica Neue, Helvetica, Arial, sans-serif;
